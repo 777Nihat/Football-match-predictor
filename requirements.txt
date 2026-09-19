@@ -6,5 +6,3 @@ lightgbm
 scipy
 joblib
 
-# Buraya xüsusi C++ sistem asılılıqları tələb edən versiya konflikti düşməməsi üçün
-# requirements faylımızı yeniləyirik
