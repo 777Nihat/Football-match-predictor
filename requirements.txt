@@ -1,0 +1,13 @@
+streamlit
+pandas
+numpy
+lightgbm
+scipy
+joblib
+
+2. Faylları kompyuterə endiririk
+from google.colab import files
+
+files.download('app.py')
+files.download('football_model_artifacts.joblib')
+files.download('requirements.txt')
