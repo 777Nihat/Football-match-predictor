@@ -1,0 +1,14 @@
+libgomp1
+
+%%writefile requirements.txt
+streamlit
+pandas
+numpy
+lightgbm
+scipy
+joblib
+
+
+from google.colab import files
+files.download('packages.txt')
+files.download('requirements.txt')
