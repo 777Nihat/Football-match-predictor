@@ -50,6 +50,7 @@ def predict_match(home_team, away_team, is_neutral):
 
 # UI
 st.title("⚽ International Football Match Predictor")
+st.caption(" Developed by **Nihat Valiyev**")
 st.write("LightGBM + Poisson Distribution ilə matç nəticəsi təxmini")
 
 teams = sorted(list(team_stats.keys()))
