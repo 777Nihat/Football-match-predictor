@@ -82,7 +82,10 @@ if st.button("Simulate the match"):
         
         col_score1, col_score2, col_score3 = st.columns([1, 2, 1])
         with col_score2:
-            st.metric(label="⚽ Predicted Final Score", value=score)
+            st.metric(
+                label="⚽ Predicted Final Score", 
+                value=f"{home_team}  {score}  {away_team}"
+            )
 
         
         import plotly.express as px
