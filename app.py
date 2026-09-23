@@ -82,13 +82,17 @@ if st.button("Simulate the match"):
 
         st.markdown("---")
         
-        
-        col_score1, col_score2, col_score3 = st.columns([1, 2, 1])
-        with col_score2:
-            st.metric(
-                label="⚽ Predicted Final Score", 
-                value=f"{home_team}  {score}  {away_team}"
-            )
+        st.markdown(
+            f"""
+            <div style="text-align: center; padding: 10px; background-color: #f0f2f6; border-radius: 10px; margin-bottom: 20px;">
+                <p style="margin:0; font-size: 14px; color: #555; font-weight: bold;">⚽ PREDICTED FINAL SCORE</p>
+                <h1 style="margin:0; font-size: 32px; color: #1f77b4;">
+                    {home_team} &nbsp; <span style="color: #111;">{score}</span> &nbsp; {away_team}
+                </h1>
+            </div>
+            """, 
+            unsafe_allow_html=True
+        )
 
         
         import plotly.express as px
